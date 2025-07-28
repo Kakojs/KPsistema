@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36310.24 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KPsistema", "KPsistema\KPsistema.csproj", "{99224555-D4CE-4C94-B1F3-2BC53A8A6183}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99224555-D4CE-4C94-B1F3-2BC53A8A6183}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99224555-D4CE-4C94-B1F3-2BC53A8A6183}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99224555-D4CE-4C94-B1F3-2BC53A8A6183}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99224555-D4CE-4C94-B1F3-2BC53A8A6183}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FDF73EEE-B898-4432-AEC1-B91A9C6EE630}
+	EndGlobalSection
+EndGlobal
