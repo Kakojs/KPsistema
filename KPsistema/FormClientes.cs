@@ -17,6 +17,7 @@ namespace KPsistema
         public FormClientes()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void Incluir_Click(object sender, EventArgs e)

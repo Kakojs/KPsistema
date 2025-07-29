@@ -66,6 +66,7 @@
             // 
             // button4
             // 
+            button4.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             button4.Location = new Point(722, 424);
             button4.Name = "button4";
             button4.Size = new Size(75, 23);
