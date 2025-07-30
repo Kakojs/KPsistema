@@ -31,6 +31,7 @@
             menuStrip1 = new MenuStrip();
             cadastroToolStripMenuItem = new ToolStripMenuItem();
             cadastrosToolStripMenuItem = new ToolStripMenuItem();
+            produtosToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -45,7 +46,7 @@
             // 
             // cadastroToolStripMenuItem
             // 
-            cadastroToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { cadastrosToolStripMenuItem });
+            cadastroToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { cadastrosToolStripMenuItem, produtosToolStripMenuItem });
             cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
             cadastroToolStripMenuItem.Size = new Size(66, 20);
             cadastroToolStripMenuItem.Text = "Cadastro";
@@ -56,6 +57,13 @@
             cadastrosToolStripMenuItem.Size = new Size(180, 22);
             cadastrosToolStripMenuItem.Text = "Clientes";
             cadastrosToolStripMenuItem.Click += cadastrosToolStripMenuItem_Click;
+            // 
+            // produtosToolStripMenuItem
+            // 
+            produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
+            produtosToolStripMenuItem.Size = new Size(180, 22);
+            produtosToolStripMenuItem.Text = "Produtos";
+            produtosToolStripMenuItem.Click += produtosToolStripMenuItem_Click;
             // 
             // Form1
             // 
@@ -78,5 +86,6 @@
         private MenuStrip menuStrip1;
         private ToolStripMenuItem cadastroToolStripMenuItem;
         private ToolStripMenuItem cadastrosToolStripMenuItem;
+        private ToolStripMenuItem produtosToolStripMenuItem;
     }
 }

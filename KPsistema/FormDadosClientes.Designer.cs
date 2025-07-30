@@ -30,18 +30,18 @@
         {
             label1 = new Label();
             label2 = new Label();
-            label3 = new Label();
             label4 = new Label();
-            textBox1Nome = new TextBox();
-            textBox3TELEFONE = new TextBox();
-            textBox4ENDERECO = new TextBox();
+            textBox1 = new TextBox();
+            textBox4 = new TextBox();
             button1 = new Button();
             button2 = new Button();
-            maskedTextBox1CPF = new MaskedTextBox();
+            maskedTextBox1 = new MaskedTextBox();
             label5 = new Label();
-            maskedTextBox2CNPJ = new MaskedTextBox();
+            maskedTextBox2 = new MaskedTextBox();
             Numero = new TextBox();
             label6Numero = new Label();
+            maskedTextBox3 = new MaskedTextBox();
+            label9 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -64,16 +64,6 @@
             label2.Text = "CPF";
             label2.Click += label2_Click;
             // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(574, 33);
-            label3.Name = "label3";
-            label3.Size = new Size(51, 15);
-            label3.TabIndex = 2;
-            label3.Text = "Telefone";
-            label3.Click += label3_Click;
-            // 
             // label4
             // 
             label4.AutoSize = true;
@@ -84,29 +74,21 @@
             label4.Text = "Endereço";
             label4.Click += label4_Click;
             // 
-            // textBox1Nome
+            // textBox1
             // 
-            textBox1Nome.Location = new Point(23, 51);
-            textBox1Nome.Name = "textBox1Nome";
-            textBox1Nome.Size = new Size(201, 23);
-            textBox1Nome.TabIndex = 4;
-            textBox1Nome.TextChanged += textBox1_TextChanged;
+            textBox1.Location = new Point(23, 51);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(201, 23);
+            textBox1.TabIndex = 4;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
-            // textBox3TELEFONE
+            // textBox4
             // 
-            textBox3TELEFONE.Location = new Point(574, 51);
-            textBox3TELEFONE.Name = "textBox3TELEFONE";
-            textBox3TELEFONE.Size = new Size(201, 23);
-            textBox3TELEFONE.TabIndex = 6;
-            textBox3TELEFONE.TextChanged += textBox3_TextChanged;
-            // 
-            // textBox4ENDERECO
-            // 
-            textBox4ENDERECO.Location = new Point(23, 112);
-            textBox4ENDERECO.Name = "textBox4ENDERECO";
-            textBox4ENDERECO.Size = new Size(201, 23);
-            textBox4ENDERECO.TabIndex = 7;
-            textBox4ENDERECO.TextChanged += textBox4_TextChanged;
+            textBox4.Location = new Point(23, 112);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(201, 23);
+            textBox4.TabIndex = 7;
+            textBox4.TextChanged += textBox4_TextChanged;
             // 
             // button1
             // 
@@ -130,14 +112,14 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
-            // maskedTextBox1CPF
+            // maskedTextBox1
             // 
-            maskedTextBox1CPF.Location = new Point(240, 51);
-            maskedTextBox1CPF.Mask = "000.000.000-00";
-            maskedTextBox1CPF.Name = "maskedTextBox1CPF";
-            maskedTextBox1CPF.Size = new Size(145, 23);
-            maskedTextBox1CPF.TabIndex = 10;
-            maskedTextBox1CPF.MaskInputRejected += maskedTextBox1_MaskInputRejected;
+            maskedTextBox1.Location = new Point(240, 51);
+            maskedTextBox1.Mask = "000.000.000-00";
+            maskedTextBox1.Name = "maskedTextBox1";
+            maskedTextBox1.Size = new Size(145, 23);
+            maskedTextBox1.TabIndex = 10;
+            maskedTextBox1.MaskInputRejected += maskedTextBox1_MaskInputRejected;
             // 
             // label5
             // 
@@ -149,14 +131,14 @@
             label5.Text = "CNPJ";
             label5.Click += label5_Click;
             // 
-            // maskedTextBox2CNPJ
+            // maskedTextBox2
             // 
-            maskedTextBox2CNPJ.Location = new Point(404, 51);
-            maskedTextBox2CNPJ.Mask = "00.000.000/0000-00";
-            maskedTextBox2CNPJ.Name = "maskedTextBox2CNPJ";
-            maskedTextBox2CNPJ.Size = new Size(145, 23);
-            maskedTextBox2CNPJ.TabIndex = 12;
-            maskedTextBox2CNPJ.MaskInputRejected += maskedTextBox2_MaskInputRejected;
+            maskedTextBox2.Location = new Point(404, 51);
+            maskedTextBox2.Mask = "00.000.000/0000-00";
+            maskedTextBox2.Name = "maskedTextBox2";
+            maskedTextBox2.Size = new Size(145, 23);
+            maskedTextBox2.TabIndex = 12;
+            maskedTextBox2.MaskInputRejected += maskedTextBox2_MaskInputRejected;
             // 
             // Numero
             // 
@@ -176,23 +158,41 @@
             label6Numero.Text = "Numero";
             label6Numero.Click += label6_Click;
             // 
+            // maskedTextBox3
+            // 
+            maskedTextBox3.Location = new Point(586, 51);
+            maskedTextBox3.Mask = "(000)0000-00000";
+            maskedTextBox3.Name = "maskedTextBox3";
+            maskedTextBox3.Size = new Size(202, 23);
+            maskedTextBox3.TabIndex = 15;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(586, 33);
+            label9.Name = "label9";
+            label9.Size = new Size(51, 15);
+            label9.TabIndex = 16;
+            label9.Text = "Telefone";
+            label9.Click += label9_Click;
+            // 
             // FormDadosClientes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label9);
+            Controls.Add(maskedTextBox3);
             Controls.Add(Numero);
             Controls.Add(label6Numero);
-            Controls.Add(maskedTextBox2CNPJ);
+            Controls.Add(maskedTextBox2);
             Controls.Add(label5);
-            Controls.Add(maskedTextBox1CPF);
+            Controls.Add(maskedTextBox1);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(textBox4ENDERECO);
-            Controls.Add(textBox3TELEFONE);
-            Controls.Add(textBox1Nome);
+            Controls.Add(textBox4);
+            Controls.Add(textBox1);
             Controls.Add(label4);
-            Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "FormDadosClientes";
@@ -205,17 +205,17 @@
 
         private Label label1;
         private Label label2;
-        private Label label3;
         private Label label4;
-        private TextBox textBox1Nome;
-        private TextBox textBox3TELEFONE;
-        private TextBox textBox4ENDERECO;
+        private TextBox textBox1;
+        private TextBox textBox4;
         private Button button1;
         private Button button2;
-        private MaskedTextBox maskedTextBox1CPF;
+        private MaskedTextBox maskedTextBox1;
         private Label label5;
-        private MaskedTextBox maskedTextBox2CNPJ;
+        private MaskedTextBox maskedTextBox2;
         private TextBox Numero;
         private Label label6Numero;
+        private MaskedTextBox maskedTextBox3;
+        private Label label9;
     }
 }

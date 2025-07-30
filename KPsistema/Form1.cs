@@ -20,5 +20,13 @@ namespace KPsistema
             // Exibe o FormClientes
             formClientes.ShowDialog(); // ShowDialog() abre o form de forma modal
         }
+
+        private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormProdutos formProdutos = new FormProdutos();// Exibe o FormProdutos
+
+
+            formProdutos.ShowDialog(); // ShowDialog() abre o form de forma modal   
+        }
     }
 }
