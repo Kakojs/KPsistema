@@ -25,7 +25,7 @@ namespace KPsistema
 
         }
 
-        ///aqui serve para alterar o cliente já existente, passando os dados do cliente para o formulário.
+        
         public FormDadosClientes(int id, string nome, string cpf, string cnpj, string telefone, string endereco, string numero)
             : this()
         {
@@ -36,9 +36,9 @@ namespace KPsistema
             maskedTextBox3.Text = telefone;
             textBox4.Text = endereco;
             Numero.Text = numero;
-        }
+        } ///aqui serve para alterar o cliente já existente, passando os dados do cliente para o formulário.
 
-
+        #region botoes de ações do formulário
         /// <summary>
         /// botão para salvar os dados do cliente.
         /// </summary>
@@ -121,8 +121,8 @@ namespace KPsistema
         {
             this.Close(); // Fecha o formulário ao clicar em Cancelar
         }
-
-
+        #endregion
+        #region Sao meus campos de eventos dos controles do formulário.
         /// <summary>
         /// São os métodos de eventos para os controles do formulário.
         /// 
@@ -167,7 +167,8 @@ namespace KPsistema
         {
 
         }
-
+        #endregion
+        #region Onde eu nomeio os campos.
         //nome do cliente
         private void label1_Click(object sender, EventArgs e)
         {
@@ -200,5 +201,6 @@ namespace KPsistema
         {
 
         }
+        #endregion
     }
 }

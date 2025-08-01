@@ -67,10 +67,11 @@ namespace KPsistema
         }
         #endregion
 
+
+
         #region Botoes de açoes da tela de clientes 
-
-
-        // botao de inclusão de clientes
+        /// <summary>   
+        /// aqui a o botão de inclusão de clientes, que abre o formulário de dados do cliente.
         private void Incluir_Click(object sender, EventArgs e)
         {
             
@@ -81,9 +82,9 @@ namespace KPsistema
             FormDadosClientes.ShowDialog(); // ShowDialog() abre o form de forma modal
             CarregarClientes(); // Recarrega a lista de clientes após fechar o formulário
         }
-
-
-        //botao de alteração de clientes
+        /// <summary>
+        /// botao de alteração de clientes
+        /// </summary> 
         private void Alterar_Click(object sender, EventArgs e)
         {
             if (dataGridView1.SelectedRows.Count > 0)
@@ -108,7 +109,9 @@ namespace KPsistema
             }
 
         }
-        //botao de remoção de clientes
+        ///<summary>
+        ///botao de remoção de clientes
+        /// </summary>
         private void Remover_Click(object sender, EventArgs e)
         {
             if (dataGridView1.SelectedRows.Count > 0)
@@ -148,15 +151,18 @@ namespace KPsistema
                 MessageBox.Show("Selecione um cliente para remover.");
             }
         }
-        //Botao de sair da tela de clientes
+        ///<summary>
+        ///Botao de sair da tela de clientes
+        ///</summary>
         private void button4_Click(object sender, EventArgs e)
         {
             CancelButton = button4;
         }
         #endregion
 
-
-        //Seria minha "tabela" que exibe os clientes consumindo os dados do banco de dados;
+        ///<summary></summary>
+        ///Seria minha "tabela" que exibe os clientes consumindo os dados do banco de dados
+        ///</sumary>
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
