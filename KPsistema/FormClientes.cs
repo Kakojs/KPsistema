@@ -15,6 +15,7 @@ namespace KPsistema
     public partial class FormClientes : Form
     {
         public FormDadosClientes FormDadosClientes { get; private set; }
+        public Button ExitButton { get; private set; }
 
         public FormClientes()
         {

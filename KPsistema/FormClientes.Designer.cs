@@ -68,12 +68,11 @@
             // 
             // button4
             // 
-            button4.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            button4.Location = new Point(722, 424);
+            button4.Location = new Point(8, 117);
             button4.Name = "button4";
             button4.Size = new Size(75, 23);
             button4.TabIndex = 3;
-            button4.Text = "Cancelar";
+            button4.Text = "Sair";
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
@@ -86,7 +85,7 @@
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(89, 12);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(708, 406);
+            dataGridView1.Size = new Size(708, 437);
             dataGridView1.TabIndex = 4;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
