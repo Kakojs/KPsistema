@@ -11,7 +11,9 @@ using Npgsql;
 
 
 namespace KPsistema
+
 {
+
     public partial class FormClientes : Form
     {
         public FormDadosClientes FormDadosClientes { get; private set; }
@@ -24,6 +26,8 @@ namespace KPsistema
             CarregarClientes();
         }
 
+
+        #region Tabela onde exibe os clientes
         private void CarregarClientes()
         {
             // String de conexão com o PostgreSQL — lembre-se de trocar os dados para os seus
@@ -61,9 +65,15 @@ namespace KPsistema
                 }
             }
         }
+        #endregion
 
+        #region Botoes de açoes da tela de clientes 
+
+
+        // botao de inclusão de clientes
         private void Incluir_Click(object sender, EventArgs e)
         {
+            
             // Cria uma nova instância do DadosClientes
             FormDadosClientes = new FormDadosClientes();
 
@@ -72,6 +82,8 @@ namespace KPsistema
             CarregarClientes(); // Recarrega a lista de clientes após fechar o formulário
         }
 
+
+        //botao de alteração de clientes
         private void Alterar_Click(object sender, EventArgs e)
         {
             if (dataGridView1.SelectedRows.Count > 0)
@@ -96,7 +108,7 @@ namespace KPsistema
             }
 
         }
-
+        //botao de remoção de clientes
         private void Remover_Click(object sender, EventArgs e)
         {
             if (dataGridView1.SelectedRows.Count > 0)
@@ -136,17 +148,21 @@ namespace KPsistema
                 MessageBox.Show("Selecione um cliente para remover.");
             }
         }
-
+        //Botao de sair da tela de clientes
         private void button4_Click(object sender, EventArgs e)
         {
-            CancelButton = button4; // Define o botão Cancelar como o botão de cancelamento do formulário
+            CancelButton = button4;
         }
+        #endregion
 
 
-
+        //Seria minha "tabela" que exibe os clientes consumindo os dados do banco de dados;
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
     }
+
+    
+
 }
